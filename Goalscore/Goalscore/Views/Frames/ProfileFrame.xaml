@@ -1,0 +1,143 @@
+﻿<Page x:Class="Goalscore.Views.Frames.ProfileFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore.Views.Frames" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProfileFrame">
+    <Page.Resources>
+
+        <!-- Backgroud Colors -->
+        <SolidColorBrush x:Key="PrimaryBackgroundColor" Color="#FFFFFF"/>
+
+
+        <SolidColorBrush x:Key="PrimaryBlueColor" Color="#263FAA"/>
+        <SolidColorBrush x:Key="PrimaryGrayColor" Color="#64677A"/>
+
+        <SolidColorBrush x:Key="SecundaryBlueColor" Color="#004BFF"/>
+        <SolidColorBrush x:Key="SecundaryGrayColor" Color="#9295A5"/>
+
+        <SolidColorBrush x:Key="TertiaryBlueColor" Color="#496FFF"/>
+        <SolidColorBrush x:Key="TertiaryGrayColor" Color="#CECECE"/>
+
+        <!-- Text Colors -->
+        <SolidColorBrush x:Key="PrimaryTextColor" Color="#FFFFFF"/>
+
+        <!-- Start: TextBoxStyle -->
+        <Style x:Key="TextBoxStyle" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SecundaryBlueColor}"/>
+            <Setter Property="Padding" Value="5.2 3.2"/>
+            <Setter Property="FontFamily" Value="/Resources/Fonts/#Poppins"/>
+            <Setter Property="FontWeight" Value="Thin"/>
+            <Setter Property="Cursor" Value="IBeam"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecundaryGrayColor}"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="MaxHeight" Value="40"/>
+            <Setter Property="MaxWidth" Value="300"/>
+            <Setter Property="AllowDrop" Value="True"/>
+            <Setter Property="ScrollViewer.PanningMode" Value="VerticalFirst"/>
+            <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="txtBorder"
+                                Background="{DynamicResource PrimaryBackgroundColor}"
+                                CornerRadius="5"
+                                MaxHeight="{TemplateBinding MaxHeight}"
+                                MaxWidth="{TemplateBinding MaxWidth}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="True">
+                            <Grid Margin="{TemplateBinding Padding}">
+                                <ScrollViewer x:Name="PART_ContentHost"
+                                              Focusable="False"
+                                              HorizontalScrollBarVisibility="Hidden"
+                                              VerticalScrollBarVisibility="Hidden"
+                                              Margin="-2 1"/>
+                                <Label x:Name="WaterMarkerLabel"
+                                       Content="{TemplateBinding Tag}"
+                                       FontWeight="{TemplateBinding FontWeight}"
+                                       VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                       HorizontalAlignment="{TemplateBinding HorizontalAlignment}"
+                                       Visibility="Collapsed"
+                                       Foreground="{TemplateBinding Foreground}"
+                                       Padding="{TemplateBinding Padding}"/>
+                            </Grid>
+
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="Text" Value=""/>
+                                </MultiTrigger.Conditions>
+                                <Setter Property="Visibility"
+                                        TargetName="WaterMarkerLabel"
+                                        Value="Visible"/>
+                            </MultiTrigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="BorderBrush" Value="{DynamicResource TertiaryBlueColor}"/>
+                            </Trigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Setter Property="BorderBrush"
+                                        Value="{DynamicResource SecundaryBlueColor}"/>
+
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+
+        </Style>
+        <!-- End: TextBoxStyle -->
+    </Page.Resources>
+    <Border CornerRadius="8" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Vertical" 
+                        Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="3">
+                <Border HorizontalAlignment="Center" Margin="0 50 0 0" BorderThickness="2" Height="204" Width="204"
+                                        BorderBrush="{DynamicResource PrimaryWhiteColor}"
+                                        CornerRadius="4">
+                    <Image x:Name="ProfileImage" Height="200" Width="200"/>
+                </Border>
+                <Button Grid.Row="2" Grid.ColumnSpan="2" Content="Select a profile picture" HorizontalAlignment="Center" Margin="0 14 20 0"  Height="40" VerticalAlignment="Top" Width="150"
+                Background="{DynamicResource SecundaryWhiteColor}"
+                Foreground="{DynamicResource SecundaryBlackColor}"
+                FontSize="16" Style="{DynamicResource RoundedButtonStyle}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetProfileImageCommand}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </StackPanel>
+            <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2"
+                       Foreground="{DynamicResource SecundaryTextColor}" FontFamily="/Resources/Fonts/#Poppins"
+                       Text="NickName"
+                       FontSize="36"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"
+                       x:Name="NickNameTextBlock"/>
+        </Grid>
+    </Border>
+</Page>

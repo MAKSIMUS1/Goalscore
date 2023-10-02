@@ -1,0 +1,85 @@
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.AssemblyReference.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.SuggestedBindingRedirects.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Views\MainWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\App.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin_MarkupCompile.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin_MarkupCompile.lref
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore_admin.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore_admin.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore_admin.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\EntityFramework.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\EntityFramework.SqlServer.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Newtonsoft.Json.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\EntityFramework.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\EntityFramework.SqlServer.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Newtonsoft.Json.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Views\MainWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.g.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.Properties.Resources.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.GenerateResource.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.CoreCompileInputs.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.CopyComplete
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\obj\Debug\Goalscore_admin.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore_admin\bin\Debug\Goalscore.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore_admin.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore_admin.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore_admin.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\EntityFramework.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\EntityFramework.SqlServer.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Newtonsoft.Json.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\EntityFramework.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\EntityFramework.SqlServer.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Newtonsoft.Json.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.AssemblyReference.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.SuggestedBindingRedirects.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\FinishedMatchFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\TimedMatchFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\MainWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\App.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin_MarkupCompile.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin_MarkupCompile.lref
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\FinishedMatchFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\TimedMatchFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\MainWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.g.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.Properties.Resources.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.GenerateResource.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.CoreCompileInputs.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.csproj.CopyComplete
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Goalscore_admin.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\nl-BE\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\MatchTeamFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\MatchTeamFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\MatchTeamsDataGrid.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\Views\Frames\MatchTeamsDataGrid.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\obj\Debug\App.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore_admin\bin\Debug\Goalscore.pdb

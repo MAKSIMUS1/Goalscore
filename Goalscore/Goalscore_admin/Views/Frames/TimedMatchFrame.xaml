@@ -1,0 +1,60 @@
+﻿<Page x:Class="Goalscore_admin.Views.Frames.TimedMatchFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore_admin.Views.Frames" xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="TimedMatchFrame">
+
+    <Border Background="Aqua">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="ID:" Grid.Row="0" Grid.Column="0"/>
+            <TextBox x:Name="MatchIdTextBox" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Content="Competition:" Grid.Row="1" Grid.Column="0"/>
+            <ComboBox x:Name="CompetitionComboBox" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Content="Utc Date:" Grid.Row="2" Grid.Column="0"/>
+            <TextBox x:Name="UtcDateMatchTextBox" Grid.Row="2" Grid.Column="1"/>
+
+            <Label Content="Stage:" Grid.Row="3" Grid.Column="0"/>
+            <ComboBox x:Name="StageComboBox" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Content="Group Stage:" Grid.Row="4" Grid.Column="0"/>
+            <TextBox x:Name="GroupStageTextBox" Grid.Row="4" Grid.Column="1"/>
+
+            <Label Content="(H)MatchTeam Id:" Grid.Row="5" Grid.Column="0"/>
+            <TextBox x:Name="HomeTeamIdTextBox" Grid.Row="5" Grid.Column="1"/>
+
+            <Label Content="(A)MatchTeam Id:" Grid.Row="6" Grid.Column="0"/>
+            <TextBox x:Name="AwayTeamIdTextBox" Grid.Row="6" Grid.Column="1"/>
+
+
+            <Label Content="Referee:" Grid.Row="7" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="RefereeComboBox" Grid.Row="7" Grid.Column="1"/>
+
+            <Button Content="Add match" Grid.Row="14" Command="{Binding AddTimedMatch}"/>
+        </Grid>
+    </Border>
+</Page>

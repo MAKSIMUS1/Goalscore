@@ -1,0 +1,664 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Goalscore.App" Collapsed="true">
+    <Position X="42.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="51" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Commands.RelayCommand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAEAEAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Commands\RelayCommand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.CustomUI.AddToFavoritesUI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAjAACASAAAEAAAAAMAAAACgAABAAQABAABhAQABAA=</HashCode>
+      <FileName>CustomUI\AddToFavoritesUI.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.CustomUI.PlayerLineup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAMAAAAAgAAAAAAAEAAACAAAAAA=</HashCode>
+      <FileName>CustomUI\PlayerLineup.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.DataBase.DataBaseManager" Collapsed="true">
+    <Position X="47.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAAABCAAA0ABIAICABAAAAkJgAQAJQIAAAAAAAgA=</HashCode>
+      <FileName>DataBase\DataBaseManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.AreaProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQABAAAAACAAAAAEIAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\AreaProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FootballDataApi.CompetitionProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAABAAAAACAAAAAEACAAAAACAAAAA=</HashCode>
+      <FileName>FootballData\CompetitionProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FootballDataApi.MatchProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEgAAAACAAABAAAAACAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\MatchProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FootballDataApi.StandingProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAABAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\StandingProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FootballDataApi.TeamProvider" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAIACAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\TeamProvider.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="FootballDataApi.Builders.AreaProviderBuilder" Collapsed="true">
+    <Position X="47.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>FootballData\Builders\AreaProviderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Builders.CompetitionProviderBuilder" Collapsed="true">
+    <Position X="45.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>FootballData\Builders\CompetitionProviderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Builders.MatchProviderBuilder" Collapsed="true">
+    <Position X="49.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>FootballData\Builders\MatchProviderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Builders.StandingProviderBuilder" Collapsed="true">
+    <Position X="40.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>FootballData\Builders\StandingProviderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Builders.TeamProviderBuilder" Collapsed="true">
+    <Position X="47.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAABAAAAAAAA=</HashCode>
+      <FileName>FootballData\Builders\TeamProviderBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Extensions.HttpExtensions" Collapsed="true">
+    <Position X="45.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Extensions\HttpExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Extensions.HttpHelpers" Collapsed="true">
+    <Position X="47.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAAAAAAABAAAAQgAAAgAAAAAAAIgAAJAAAAAAA=</HashCode>
+      <FileName>FootballData\Extensions\HttpHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Area" Collapsed="true">
+    <Position X="44" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Models\Area.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Booking" Collapsed="true">
+    <Position X="51" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAAAAAABAAAAAAAAAAACAAEAAIAQAAAAA=</HashCode>
+      <FileName>FootballData\Models\Booking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Coach" Collapsed="true">
+    <Position X="52.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAAAAAAACAA=</HashCode>
+      <FileName>FootballData\Models\Coach.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Competition" Collapsed="true">
+    <Position X="40.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAIAAAAAAAAAAAAgAQUAgAAAAAABIAAAAQAAAAA=</HashCode>
+      <FileName>FootballData\Models\Competition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.CompetitionMatches" Collapsed="true">
+    <Position X="42.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAQAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Models\CompetitionMatches.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Goal" Collapsed="true">
+    <Position X="42.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAgAAAAAAAIgAAAABAAAAAAQAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Models\Goal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.GoalScore" Collapsed="true">
+    <Position X="44" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Models\GoalScore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Match" Collapsed="true">
+    <Position X="52.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIEIEAQAgAAhAAIAAMAEACACAgCAAAAgSAAAhIIA=</HashCode>
+      <FileName>FootballData\Models\Match.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.MatchTeam" Collapsed="true">
+    <Position X="51" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAgAUQEAADCACAEABAACCAiAAAAABEAEIAUAQsAA=</HashCode>
+      <FileName>FootballData\Models\MatchTeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Player" Collapsed="true">
+    <Position X="42.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAgEAAAAAQDQAAQAgQAEAAAAAgACAQ=</HashCode>
+      <FileName>FootballData\Models\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Ranking" Collapsed="true">
+    <Position X="49.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAQCAAAAEggAwAAAAAAAAAAAQAAAAEAAAgAAAAAA=</HashCode>
+      <FileName>FootballData\Models\Ranking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Referee" Collapsed="true">
+    <Position X="51" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>FootballData\Models\Referee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Score" Collapsed="true">
+    <Position X="44" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAQAAgCAAAAAACAAAAACAAAAAAAAAAAAIIAA=</HashCode>
+      <FileName>FootballData\Models\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Season" Collapsed="true">
+    <Position X="45.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAEBAAAA=</HashCode>
+      <FileName>FootballData\Models\Season.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.SeasonStanding" Collapsed="true">
+    <Position X="47.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>FootballData\Models\SeasonStanding.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Standing" Collapsed="true">
+    <Position X="51" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAAAQAAAAAAAAAAAAQgAAAAAAAA=</HashCode>
+      <FileName>FootballData\Models\Standing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Substitution" Collapsed="true">
+    <Position X="42.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAgAACAAAABAAAAAAAAgAACAAEAAAAAEAAAA=</HashCode>
+      <FileName>FootballData\Models\Substitution.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Models.Team" Collapsed="true">
+    <Position X="44" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAAAAAKIAgAAAAAAAAAUAAAAAAIACJAAQIQAAAAA=</HashCode>
+      <FileName>FootballData\Models\Team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Utilities.RootApi" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Utilities\RootApi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Utilities.RootArea" Collapsed="true">
+    <Position X="1.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Utilities\RootArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Utilities.RootCompetition" Collapsed="true">
+    <Position X="3.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Utilities\RootCompetition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Utilities.RootMatch" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Utilities\RootMatch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FootballDataApi.Utilities.RootTeam" Collapsed="true">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAQAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Utilities\RootTeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Model.MatchFinished" Collapsed="true">
+    <Position X="45.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAEJEAAAiEoBAAIAAAAEAAAgAgABAAAAQAAAhQAA=</HashCode>
+      <FileName>Model\MatchFinished.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Model.PlayerInUserTeam" Collapsed="true">
+    <Position X="44" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAgAAAAAAQDQAAQAAAAEAAAAAgECAQ=</HashCode>
+      <FileName>Model\PlayerInUserTeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Model.User" Collapsed="true">
+    <Position X="40.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAgAAAAAECAAAAAAAAAAA=</HashCode>
+      <FileName>Model\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Model.UserFavoritePlayers" Collapsed="true">
+    <Position X="42.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIAQAAAAA=</HashCode>
+      <FileName>Model\UserFavoritePlayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Model.UserTeam" Collapsed="true">
+    <Position X="44" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAgAUQEAADAACAEABAACAACAABAAAAAEIAUAAsAA=</HashCode>
+      <FileName>Model\UserTeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MatchTimed" Collapsed="true">
+    <Position X="8.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAJEAAAiEIBAAIAAAAEAAAAAiABAAAAQAAAhQAA=</HashCode>
+      <FileName>Model\MatchTimed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.AuthorizationViewModel" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AuthorizationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Goalscore.ViewModels.FinishedMatchContentInfoViewModel" Collapsed="true">
+    <Position X="14.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FinishedMatchContentInfoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.FinishedMatchContentLineupViewModel" Collapsed="true">
+    <Position X="5.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FinishedMatchContentLineupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.FinishedMatchContentSquadViewModel" Collapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAYAIgAEAAACAEAQABQEAACAAAAAgAAAgBAAQAAKA=</HashCode>
+      <FileName>ViewModels\FinishedMatchContentSquadViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.FinishedMatchWindowViewModel" Collapsed="true">
+    <Position X="5.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAABACAwgAAgMIAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FinishedMatchWindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.FrameViewModel&lt;F, W&gt;" Collapsed="true">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\FrameViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.LoginViewModel" Collapsed="true">
+    <Position X="14.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAAAIAAAACAAAA=</HashCode>
+      <FileName>ViewModels\LoginViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="2" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAACACAAQAAQAMIAAAAQAAwCAABBEgAAA=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MatchesFinishedViewModel" Collapsed="true">
+    <Position X="2.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAQgAAAgAAAAIAAAAFAAAAJAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MatchesFinishedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MatchesFrameViewModel" Collapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIIAAAAAAAgBQAAAAAAAAAAAAAAQQCAAAAAAAAEA=</HashCode>
+      <FileName>ViewModels\MatchesFrameViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MatchesTimedViewModel" Collapsed="true">
+    <Position X="4" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABCAAAAQgAAAgAAAAIAAAAFABAAJAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MatchesTimedViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.MyPlayersViewModel" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\MyPlayersViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.ProfileViewModel" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\ProfileViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.RegistrationViewModel" Collapsed="true">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAEBAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RegistrationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.TimedMatchContentFrameViewModel" Collapsed="true">
+    <Position X="12.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TimedMatchContentFrameViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.TimedMatchViewModel" Collapsed="true">
+    <Position X="7.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ViewModels\TimedMatchViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.UserTeamViewModel" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAACAAEAAoABACSAAAAkAAAgAAQQAgAEEAIABAA=</HashCode>
+      <FileName>ViewModels\UserTeamViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.ViewModels.WindowViewModel&lt;T&gt;" Collapsed="true">
+    <Position X="4.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>ViewModels\WindowViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Properties.Resources" Collapsed="true">
+    <Position X="42.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Properties.Settings" Collapsed="true">
+    <Position X="49.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WPFUIKitProfessional.Themes.ThemesController" Collapsed="true">
+    <Position X="49.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQACAAAAAAAAAAAAAAAACAAAABAAAAAAAAA=</HashCode>
+      <FileName>Themes\ThemesController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Utilities.PasswordHasher" Collapsed="true">
+    <Position X="40.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAAA=</HashCode>
+      <FileName>Utilities\PasswordHasher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Goalscore.Views.AuthorizationWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\AuthorizationWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.FinishedMatchWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\FinishedMatchWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.MatchesFinishedFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="40.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\MatchesFinishedFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.MatchesFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="42.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\MatchesFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.MatchesTimedFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="44" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\MatchesTimedFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.TimedMatchWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\TimedMatchWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.FinishedMatchContentInfo" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\FinishedMatchContentInfo.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.FinishedMatchContentLineup" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="51" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\FinishedMatchContentLineup.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.FinishedMatchContentSquad" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\FinishedMatchContentSquad.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.Login" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="49.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\Login.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.MyPlayersFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\MyPlayersFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.ProfileFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\ProfileFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.Registration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\Registration.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.TimedMatchContentFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="51" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\TimedMatchContentFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Goalscore.Views.Frames.UserTeamFrame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Views\Frames\UserTeamFrame.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="FootballDataApi.Interfaces.IAreaProvider" Collapsed="true">
+    <Position X="40.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Interfaces\IAreaProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FootballDataApi.Interfaces.ICompetitionProvider" Collapsed="true">
+    <Position X="42.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAA=</HashCode>
+      <FileName>FootballData\Interfaces\ICompetitionProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FootballDataApi.Interfaces.IMatchProvider" Collapsed="true">
+    <Position X="44" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAEgAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Interfaces\IMatchProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FootballDataApi.Interfaces.IStandingProvider" Collapsed="true">
+    <Position X="45.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Interfaces\IStandingProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FootballDataApi.Interfaces.ITeamProvider" Collapsed="true">
+    <Position X="47.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAIACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FootballData\Interfaces\ITeamProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Goalscore.ViewModels.MatchesType" Collapsed="true">
+    <Position X="40.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>ViewModels\MatchesFrameViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

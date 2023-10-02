@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="Goalscore.CustomUI.AddToFavoritesUI"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Goalscore.CustomUI"
+             mc:Ignorable="d" 
+             x:Name="control"
+             d:DesignHeight="100" d:DesignWidth="100"
+             Loaded="control_Loaded">
+    <Grid MouseDown="Ellipse_MouseDown">
+        <Border x:Name="NonSelected"
+Background="{Binding Color, ElementName=control}"
+BorderThickness="{Binding BorderSize, ElementName=control}"
+CornerRadius="{Binding CornerRadius, ElementName=control}"
+BorderBrush="{Binding BorderColor, ElementName=control}"/>
+
+
+        <Border x:Name="Selected" Visibility="Collapsed"
+Background="{Binding SelectedColor, ElementName=control}"
+BorderThickness="{Binding BorderSize, ElementName=control}"
+CornerRadius="{Binding CornerRadius, ElementName=control}"
+BorderBrush="{Binding BorderColor, ElementName=control}"/>
+
+
+        <Image x:Name="Picture" Source="{Binding ImageSource, ElementName=control}"
+VerticalAlignment="Center" HorizontalAlignment="Center"
+RenderOptions.BitmapScalingMode="HighQuality"/>
+
+    </Grid>
+</UserControl>

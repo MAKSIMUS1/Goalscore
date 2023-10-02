@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goalscore", "Goalscore\Goalscore.csproj", "{5308540A-F904-4130-9174-C15334317629}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goalscore_admin", "Goalscore_admin\Goalscore_admin.csproj", "{4A17A895-1EEC-4AB0-9C7D-2641137AC58C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5308540A-F904-4130-9174-C15334317629}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5308540A-F904-4130-9174-C15334317629}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5308540A-F904-4130-9174-C15334317629}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5308540A-F904-4130-9174-C15334317629}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A17A895-1EEC-4AB0-9C7D-2641137AC58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A17A895-1EEC-4AB0-9C7D-2641137AC58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A17A895-1EEC-4AB0-9C7D-2641137AC58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A17A895-1EEC-4AB0-9C7D-2641137AC58C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2DF8903A-14E1-432C-A71C-E101ACABF046}
+	EndGlobalSection
+EndGlobal

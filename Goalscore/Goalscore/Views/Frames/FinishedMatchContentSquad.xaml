@@ -1,0 +1,109 @@
+﻿<Page x:Class="Goalscore.Views.Frames.FinishedMatchContentSquad"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore.Views.Frames"
+      xmlns:fui="clr-namespace:Goalscore.CustomUI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="600"
+      FontFamily="/Resources/Fonts/#Poppins"
+      Title="FinishedMatchContentSquad">
+
+    <Border CornerRadius="8" Background="{DynamicResource SecundaryBackgroundColor}">
+        <ScrollViewer Style="{StaticResource LeftScrollViewer}" CanContentScroll="True">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="290"/>
+                    <ColumnDefinition Width="290"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Foreground="{DynamicResource PrimaryTextColor}" Grid.Row="0" Grid.ColumnSpan="2" Text="Start squad"/>
+
+                <TextBlock Foreground="{DynamicResource PrimaryTextColor}" Grid.Row="2" Grid.ColumnSpan="2" Text="Bench squad"/>
+                <!-- Home Team Start Players-->
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" MaxWidth="290" x:Name="HomeTeamStartListView" Grid.Row="1" Grid.Column="0" ItemsSource="{Binding HomeTeamStartPlayers}" SelectedItem="{Binding HomeStartSelectedPlayer}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="280" CornerRadius="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{DynamicResource SecundaryBackgroundColor}" Padding="10">
+                                <DockPanel Width="260" LastChildFill="False">
+                                    <TextBlock Text="{Binding Name}" Foreground="{DynamicResource PrimaryTextColor}" DockPanel.Dock="Left"/>
+                                    <fui:AddToFavoritesUI x:Name="StartButton" 
+                                                          DockPanel.Dock="Right"
+                                                          Margin="5" 
+                                                          Id="{Binding Id}"
+                                                          Width="30" Height="30" 
+                                                          Style="{StaticResource Star}">
+                                    </fui:AddToFavoritesUI>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!-- Away Team Start Players-->
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" MaxWidth="290" x:Name="AwayTeamStartListView" Grid.Row="1" Grid.Column="1" ItemsSource="{Binding AwayTeamStartPlayers}" SelectedItem="{Binding AwayStartSelectedPlayer}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="280" CornerRadius="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{DynamicResource SecundaryBackgroundColor}" Padding="10">
+                                <DockPanel Width="260" LastChildFill="False">
+                                    <fui:AddToFavoritesUI x:Name="StartButton" 
+                                                          Margin="5" 
+                                                          Id="{Binding Id}"
+                                                          Width="30" Height="30" 
+                                                          Style="{StaticResource Star}"
+                                                          DockPanel.Dock="Left">
+                                    </fui:AddToFavoritesUI>
+                                    <TextBlock Foreground="{DynamicResource PrimaryTextColor}" Text="{Binding Name}" DockPanel.Dock="Right"/>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!-- Home Team Bench Players-->
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" MaxWidth="290" x:Name="HomeTeamBenchListView" Grid.Row="3" Grid.Column="0" ItemsSource="{Binding HomeTeamBenchPlayers}" SelectedItem="{Binding HomeBenchSelectedPlayer}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="280" CornerRadius="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{DynamicResource SecundaryBackgroundColor}" Padding="10">
+                                <DockPanel Width="260" LastChildFill="False">
+                                    <TextBlock Foreground="{DynamicResource PrimaryTextColor}" Text="{Binding Name}" DockPanel.Dock="Left"/>
+                                    <fui:AddToFavoritesUI x:Name="StartButton" 
+                                                          Margin="5" 
+                                                          Id="{Binding Id}"
+                                                          Width="30" Height="30" 
+                                                          Style="{StaticResource Star}"
+                                                           DockPanel.Dock="Right">
+                                    </fui:AddToFavoritesUI>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <!-- Away Team Bench Players-->
+                <ListView ScrollViewer.HorizontalScrollBarVisibility="Disabled" MaxWidth="290" x:Name="AwayTeamBenchListView" Grid.Row="3" Grid.Column="2" ItemsSource="{Binding AwayTeamBenchPlayers}" SelectedItem="{Binding AwayBenchSelectedPlayer}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Border Width="280" CornerRadius="10" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="{DynamicResource SecundaryBackgroundColor}" Padding="10">
+                                <DockPanel Width="260" LastChildFill="False">
+                                    <fui:AddToFavoritesUI x:Name="StartButton" 
+                                                          Margin="5" 
+                                                          Id="{Binding Id}"
+                                                          Width="30" Height="30" 
+                                                          Style="{StaticResource Star}"
+                                                          DockPanel.Dock="Left">
+                                    </fui:AddToFavoritesUI>
+                                    <TextBlock Foreground="{DynamicResource PrimaryTextColor}" Text="{Binding Name}" DockPanel.Dock="Right"/>
+                                </DockPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Grid>
+        </ScrollViewer>
+    </Border>
+</Page>

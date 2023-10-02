@@ -1,0 +1,120 @@
+﻿<Window x:Class="Goalscore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Goalscore" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        mc:Ignorable="d"
+        x:Name="Home"
+        Title="MainWindow"
+        Height="720" 
+        Width="1280"
+        Icon="../icon_main.ico"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Background="Transparent" AllowsTransparency="True"
+        ResizeMode="NoResize" WindowState="Normal">
+    <Border
+        x:Name="WindowBorder"
+            CornerRadius="20"
+        Background="{DynamicResource SecundaryBackgroundColor}">
+        <!--Background="#272537"> -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="44"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Для верхней панели-->
+            <Grid Grid.Row="0">
+                <!-- Start: Button Close | Restore | Minimize -->
+                <StackPanel Grid.Row="0" Grid.Column="4" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,10,0" Height="30" Orientation="Horizontal" FlowDirection="RightToLeft">
+                    <Button x:Name="btnClose" Style="{StaticResource IconButtonsStyle}" Content="{DynamicResource close}" Command="{Binding CloseWindowCommand}" Tag="IsCloseButton"/>
+                    <Button x:Name="btnRestore" Margin="5 0" Command="{Binding RestoreWindowCommand}">
+                        <Button.Style>
+                            <Style TargetType="{x:Type Button}" BasedOn="{StaticResource IconButtonsStyle}">
+                                <Setter Property="Content" Value="{DynamicResource maximize}"/>
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding ElementName=Home, Path=WindowState}" Value="Maximized">
+                                        <Setter Property="Content" Value="{DynamicResource restore}"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <Button x:Name="btnMinimize" Style="{DynamicResource IconButtonsStyle}" Content="{DynamicResource minimize}" Command="{Binding MinimizeWindowCommand}"/>
+                </StackPanel>
+                <!-- End: Button Close | Restore | Minimize -->
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Для левой панели-->
+                <Grid Grid.Column="0">
+                    <Border CornerRadius="0 0 0 10"
+                    Padding="10"
+                    Background="{DynamicResource SecundaryBackgroundColor}">
+                        <Grid x:Name="gridMenu">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="60"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="100"/>
+                                <RowDefinition Height="80"/>
+                            </Grid.RowDefinitions>
+
+                            <!-- Logo -->
+                            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                                <Image Source="/Resources/Icons/Logo_2.png" Stretch="Fill" Height="36" Width="36" VerticalAlignment="Center" Margin="10 0 0 0"/>
+                                <Label Content="GoalScore" Foreground="{DynamicResource SecundaryBlueColor}" FontWeight="Bold" FontSize="24" VerticalAlignment="Center" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="5 0 0 0"/>
+                            </StackPanel>
+
+                            <StackPanel Grid.Row="1">
+                                <RadioButton x:Name="rdHome" Content="Home" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource home}" Margin="0 30 0 0" Command="{Binding HomePageCommand}"/>
+                                <RadioButton x:Name="rdPlayers" Content="My Players" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource collections}" Margin="0 1 0 1" Command="{Binding MyPlayersPageCommand}"/>
+                                <RadioButton x:Name="rdUserTeam" Content="My Team" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource information}" Margin="0 1 0 1" Command="{Binding UserTeamPageCommand}"/>
+                                <RadioButton x:Name="rdProfile" Content="Profile" Style="{DynamicResource MenuRadioButtonStyle}" Tag="{DynamicResource settings}" Command="{Binding ProfilePageCommand}"/>
+
+                                <Separator Margin="20 20" Background="{DynamicResource TertiaryBackgroundColor}"/>
+
+
+                            </StackPanel>
+
+                            <Border Grid.Row="3" CornerRadius="18" Width="110" Height="35" Background="{DynamicResource TertiaryBackgroundColor}" HorizontalAlignment="Right" Margin="0 0 20 0">
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <Path Data="{DynamicResource sun}" Height="16" Width="16" Stretch="UniformToFill" Fill="{DynamicResource PrimaryYellowColor}" VerticalAlignment="Center"/>
+                                    <ToggleButton x:Name="Themes"
+                                  IsChecked="False"
+                                  HorizontalAlignment="Right"
+                                  Style="{DynamicResource ToggleButtonStyle}"
+                                  Margin="10 0 10 0">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="Click">
+                                                <i:InvokeCommandAction 
+                                                    Command="{Binding ThemesChangeCommand}" />
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                    </ToggleButton>
+                                    <Path Data="{DynamicResource moon}" Height="16" Width="16" Stretch="Fill" Fill="{DynamicResource PrimaryWhiteColor}" VerticalAlignment="Center"/>
+                                </StackPanel>
+                                <Border.BitmapEffect>
+                                    <DropShadowBitmapEffect
+                                            ShadowDepth="1"
+                                            Direction="0"
+                                            Color="#5B8DEF"
+                                            Softness="0.8"/>
+                                </Border.BitmapEffect>
+                            </Border>
+
+                        </Grid>
+                    </Border>
+                </Grid>
+                <!-- Для правой панели-->
+                <Grid Grid.Column="1">
+                    <Frame x:Name="MainFrame"  NavigationUIVisibility="Hidden"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

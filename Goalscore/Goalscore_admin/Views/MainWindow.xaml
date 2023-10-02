@@ -1,0 +1,46 @@
+﻿<Window x:Class="Goalscore_admin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Goalscore_admin"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="800">
+    <Border
+        x:Name="WindowBorder"
+        Background="#272537">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <!-- Для верхней панели-->
+            <Grid Grid.Row="0">
+
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Для левой панели-->
+                <Grid Grid.Column="0">
+                    <StackPanel>
+                        <Button Height="40" Content="Add Timed Match" Command="{Binding SetTimedMatchFrameCommand}"/>
+                        <Button Height="40" Content="Add Finished Match" Command="{Binding SetFinishedMatchesCommand}"/>
+                        <Button Height="40" Content="Add MatchTeam" Command="{Binding SetMatchTeamCommand}"/>
+                        <Separator Margin="0 5 0 5"/>
+                        <Button Height="40" Content="MatchTeams" Command="{Binding SetMatchTeamsDataGridCommand}"/>
+                        
+                    </StackPanel>
+                </Grid>
+                <!-- Для правой панели-->
+                <Grid Grid.Column="1">
+                    <Frame x:Name="MainFrame"  NavigationUIVisibility="Hidden"/>
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

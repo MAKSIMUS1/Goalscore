@@ -1,0 +1,112 @@
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Goalscore.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Goalscore.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Newtonsoft.Json.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Newtonsoft.Json.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.csproj.AssemblyReference.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.csproj.SuggestedBindingRedirects.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\App.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore_MarkupCompile.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore_MarkupCompile.lref
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.g.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.Properties.Resources.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.csproj.GenerateResource.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.csproj.CoreCompileInputs.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.csproj.CopyComplete
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Goalscore.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\MainWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\MainWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Goalscore.exe.config
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Goalscore.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\EntityFramework.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\EntityFramework.SqlServer.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Newtonsoft.Json.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\EntityFramework.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\EntityFramework.SqlServer.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Newtonsoft.Json.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.csproj.AssemblyReference.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.csproj.SuggestedBindingRedirects.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\MainWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\App.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore_MarkupCompile.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore_MarkupCompile.lref
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\MainWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.g.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.Properties.Resources.resources
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.csproj.GenerateResource.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.csproj.CoreCompileInputs.cache
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.csproj.CopyComplete
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.exe
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Goalscore.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\App.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Styles\MatchesTypeRadioButtonStyle.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\AuthorizationWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\Login.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\Registration.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesFinishedFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesTimedFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\AuthorizationWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\Login.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\Registration.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesFinishedFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore — копия\Goalscore\obj\Debug\Views\Frames\MatchesTimedFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\EntityFramework.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\EntityFramework.SqlServer.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.dll
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\EntityFramework.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\EntityFramework.SqlServer.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\bin\Debug\Microsoft.Xaml.Behaviors.xml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Styles\MatchesTypeRadioButtonStyle.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\AuthorizationWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\Login.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\Registration.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesFinishedFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesTimedFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\App.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\AuthorizationWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\Login.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\Registration.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesFinishedFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MatchesTimedFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\CustomUI\AddToFavoritesUI.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\CustomUI\AddToFavoritesUI.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\TimedMatchWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\TimedMatchWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\TimedMatchContentFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\TimedMatchContentFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Resources\Icons\Icons.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Styles\ButtonStyle.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Styles\RadioButtonStyle.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Themes\DarkTheme.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Themes\LightTheme.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\UserTeamFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\UserTeamFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentInfo.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentLineup.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentSquad.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentInfo.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentLineup.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\FinishedMatchContentSquad.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\FinishedMatchWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\FinishedMatchWindow.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Styles\FavoriteCustomUI.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\CustomUI\PlayerLineup.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\CustomUI\PlayerLineup.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MyPlayersFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\ProfileFrame.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\MyPlayersFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\Frames\ProfileFrame.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Themes\ScrollColors.baml
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\LoadWindow.g.cs
+D:\BSTU\Kurs_2_2\Coursework\Goalscore\Goalscore\obj\Debug\Views\LoadWindow.baml

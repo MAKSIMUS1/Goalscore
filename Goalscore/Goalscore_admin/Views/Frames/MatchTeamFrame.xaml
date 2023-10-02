@@ -1,0 +1,86 @@
+﻿<Page x:Class="Goalscore_admin.Views.Frames.MatchTeamFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore_admin.Views.Frames" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MatchTeamFrame">
+
+    <Border Background="Aqua">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="17*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label Content="TeamId:" Grid.Row="0" Grid.Column="0"/>
+            <TextBox x:Name="TeamIdTextBox" Grid.Row="0" Grid.Column="1" >
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="TextChanged">
+                        <i:InvokeCommandAction Command="{Binding TeamIdChangedCommand}" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </TextBox>
+            
+            <Label Content="CoachId:" Grid.Row="1" Grid.Column="0"/>
+            <TextBox x:Name="CoachIdTextBox" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Content="Captain:" Grid.Row="2" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="CaptainComboBox" Grid.Row="2" Grid.Column="1"/>
+
+            <Label Content="GK:" Grid.Row="3" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="GKComboBox" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Content="LB:" Grid.Row="4" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="LBComboBox" Grid.Row="4" Grid.Column="1"/>
+
+            <Label Content="CB1:" Grid.Row="5" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="CB1ComboBox" Grid.Row="5" Grid.Column="1"/>
+
+            <Label Content="CB2:" Grid.Row="6" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="CB2ComboBox" Grid.Row="6" Grid.Column="1"/>
+
+            <Label Content="RB:" Grid.Row="7" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="RBComboBox" Grid.Row="7" Grid.Column="1"/>
+
+            <Label Content="LCM:" Grid.Row="8" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="LCMComboBox" Grid.Row="8" Grid.Column="1"/>
+
+            <Label Content="CM:" Grid.Row="9" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="CMComboBox" Grid.Row="9" Grid.Column="1"/>
+
+            <Label Content="RCM:" Grid.Row="10" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="RCMComboBox" Grid.Row="10" Grid.Column="1"/>
+
+            <Label Content="LW:" Grid.Row="11" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="LWComboBox" Grid.Row="11" Grid.Column="1"/>
+
+            <Label Content="ST:" Grid.Row="12" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="STComboBox" Grid.Row="12" Grid.Column="1"/>
+
+            <Label Content="RW:" Grid.Row="13" Grid.Column="0"/>
+            <ComboBox Style="{StaticResource combostyle}" x:Name="RWComboBox" Grid.Row="13" Grid.Column="1"/>
+
+
+            <Button Content="Add match team" Grid.Row="14" Command="{Binding AddMatchTeam}"/>
+        </Grid>
+    </Border>
+</Page>

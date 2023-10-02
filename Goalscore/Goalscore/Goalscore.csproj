@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5308540A-F904-4130-9174-C15334317629}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Goalscore</RootNamespace>
+    <AssemblyName>Goalscore</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.39\lib\net45\Microsoft.Xaml.Behaviors.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="CustomUI\AddToFavoritesUI.xaml.cs">
+      <DependentUpon>AddToFavoritesUI.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomUI\PlayerLineup.xaml.cs">
+      <DependentUpon>PlayerLineup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MatchFinished.cs" />
+    <Compile Include="Model\PlayerInUserTeam.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Model\UserFavoritePlayers.cs" />
+    <Compile Include="Model\UserTeam.cs" />
+    <Compile Include="Themes\ThemesController.cs" />
+    <Compile Include="Utilities\PasswordHasher.cs" />
+    <Compile Include="ViewModels\AuthorizationViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\FinishedMatchContentInfoViewModel.cs" />
+    <Compile Include="ViewModels\FinishedMatchContentLineupViewModel.cs" />
+    <Compile Include="ViewModels\FinishedMatchContentSquadViewModel.cs" />
+    <Compile Include="ViewModels\FinishedMatchWindowViewModel.cs" />
+    <Compile Include="ViewModels\FrameViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MatchesFinishedViewModel.cs" />
+    <Compile Include="ViewModels\MatchesFrameViewModel.cs" />
+    <Compile Include="ViewModels\MatchesTimedViewModel.cs" />
+    <Compile Include="Model\MatchTimed.cs" />
+    <Compile Include="ViewModels\MyPlayersViewModel.cs" />
+    <Compile Include="ViewModels\ProfileViewModel.cs" />
+    <Compile Include="ViewModels\RegistrationViewModel.cs" />
+    <Compile Include="ViewModels\TimedMatchContentFrameViewModel.cs" />
+    <Compile Include="ViewModels\TimedMatchViewModel.cs" />
+    <Compile Include="ViewModels\UserTeamViewModel.cs" />
+    <Compile Include="ViewModels\WindowViewModel.cs" />
+    <Compile Include="Views\AuthorizationWindow.xaml.cs">
+      <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FinishedMatchWindow.xaml.cs">
+      <DependentUpon>FinishedMatchWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\FinishedMatchContentInfo.xaml.cs">
+      <DependentUpon>FinishedMatchContentInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\FinishedMatchContentLineup.xaml.cs">
+      <DependentUpon>FinishedMatchContentLineup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\FinishedMatchContentSquad.xaml.cs">
+      <DependentUpon>FinishedMatchContentSquad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\MatchesFinishedFrame.xaml.cs">
+      <DependentUpon>MatchesFinishedFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\MatchesFrame.xaml.cs">
+      <DependentUpon>MatchesFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\MatchesTimedFrame.xaml.cs">
+      <DependentUpon>MatchesTimedFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\MyPlayersFrame.xaml.cs">
+      <DependentUpon>MyPlayersFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\ProfileFrame.xaml.cs">
+      <DependentUpon>ProfileFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\TimedMatchContentFrame.xaml.cs">
+      <DependentUpon>TimedMatchContentFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Frames\UserTeamFrame.xaml.cs">
+      <DependentUpon>UserTeamFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoadWindow.xaml.cs">
+      <DependentUpon>LoadWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TimedMatchWindow.xaml.cs">
+      <DependentUpon>TimedMatchWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="CustomUI\AddToFavoritesUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomUI\PlayerLineup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\ButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Styles\FavoriteCustomUI.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\MatchesTypeRadioButtonStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\RadioButtonStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\DarkTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\LightTheme.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\ScrollColors.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AuthorizationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FinishedMatchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\FinishedMatchContentInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\FinishedMatchContentLineup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\FinishedMatchContentSquad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\MyPlayersFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\ProfileFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\TimedMatchContentFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\UserTeamFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoadWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\RelayCommand.cs" />
+    <Compile Include="DataBase\DataBaseManager.cs" />
+    <Compile Include="FootballData\AreaProvider.cs" />
+    <Compile Include="FootballData\Builders\AreaProviderBuilder.cs" />
+    <Compile Include="FootballData\Builders\CompetitionProviderBuilder.cs" />
+    <Compile Include="FootballData\Builders\MatchProviderBuilder.cs" />
+    <Compile Include="FootballData\Builders\StandingProviderBuilder.cs" />
+    <Compile Include="FootballData\Builders\TeamProviderBuilder.cs" />
+    <Compile Include="FootballData\CompetitionProvider.cs" />
+    <Compile Include="FootballData\Extensions\HttpExtensions.cs" />
+    <Compile Include="FootballData\Extensions\HttpHelpers.cs" />
+    <Compile Include="FootballData\Interfaces\IAreaProvider.cs" />
+    <Compile Include="FootballData\Interfaces\ICompetitionProvider.cs" />
+    <Compile Include="FootballData\Interfaces\IMatchProvider.cs" />
+    <Compile Include="FootballData\Interfaces\IStandingProvider.cs" />
+    <Compile Include="FootballData\Interfaces\ITeamProvider.cs" />
+    <Compile Include="FootballData\MatchProvider.cs" />
+    <Compile Include="FootballData\Models\Area.cs" />
+    <Compile Include="FootballData\Models\Booking.cs" />
+    <Compile Include="FootballData\Models\Coach.cs" />
+    <Compile Include="FootballData\Models\Competition.cs" />
+    <Compile Include="FootballData\Models\CompetitionMatches.cs" />
+    <Compile Include="FootballData\Models\Goal.cs" />
+    <Compile Include="FootballData\Models\GoalScore.cs" />
+    <Compile Include="FootballData\Models\Match.cs" />
+    <Compile Include="FootballData\Models\MatchTeam.cs" />
+    <Compile Include="FootballData\Models\Player.cs" />
+    <Compile Include="FootballData\Models\Ranking.cs" />
+    <Compile Include="FootballData\Models\Referee.cs" />
+    <Compile Include="FootballData\Models\Score.cs" />
+    <Compile Include="FootballData\Models\Season.cs" />
+    <Compile Include="FootballData\Models\SeasonStanding.cs" />
+    <Compile Include="FootballData\Models\Standing.cs" />
+    <Compile Include="FootballData\Models\Substitution.cs" />
+    <Compile Include="FootballData\Models\Team.cs" />
+    <Compile Include="FootballData\StandingProvider.cs" />
+    <Compile Include="FootballData\TeamProvider.cs" />
+    <Compile Include="FootballData\Utilities\RootApi.cs" />
+    <Compile Include="FootballData\Utilities\RootArea.cs" />
+    <Compile Include="FootballData\Utilities\RootCompetition.cs" />
+    <Compile Include="FootballData\Utilities\RootMatch.cs" />
+    <Compile Include="FootballData\Utilities\RootTeam.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\Frames\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Views\Frames\MatchesFinishedFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\MatchesFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Frames\MatchesTimedFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TimedMatchWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Diagram.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Resource Include="Resources\AC_Milan.png" />
+    <Resource Include="Resources\AS_Roma.png" />
+    <Resource Include="Resources\Fonts\Poppins-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\no_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Logo_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\Star.png" />
+    <Resource Include="Resources\Icons\YellowStar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\football_field.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Manchester_City_FC.png" />
+    <Resource Include="Resources\player_10183.png" />
+    <Resource Include="Resources\player_143.png" />
+    <Resource Include="Resources\player_3182.png" />
+    <Resource Include="Resources\player_3222.png" />
+    <Resource Include="Resources\player_3254.png" />
+    <Resource Include="Resources\player_3311.png" />
+    <Resource Include="Resources\player_3313.png" />
+    <Resource Include="Resources\player_3654.png" />
+    <Resource Include="Resources\player_38101.png" />
+    <Resource Include="Resources\player_3895.png" />
+    <Resource Include="Resources\player_8069.png" />
+    <Resource Include="Resources\Real_Madrid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\team_field.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Nations\Albania.png" />
+    <Resource Include="Resources\Nations\Algeria.png" />
+    <Resource Include="Resources\Nations\Angola.png" />
+    <Resource Include="Resources\Nations\Argentina.png" />
+    <Resource Include="Resources\Nations\Australia.png" />
+    <Resource Include="Resources\Nations\Austria.png" />
+    <Resource Include="Resources\Nations\Belgium.png" />
+    <Resource Include="Resources\Nations\Bolivia.png" />
+    <Resource Include="Resources\Nations\Bosnia-Herzegovina.png" />
+    <Resource Include="Resources\Nations\Brazil.png" />
+    <Resource Include="Resources\Nations\Bulgaria.png" />
+    <Resource Include="Resources\Nations\Burkina Faso.png" />
+    <Resource Include="Resources\Nations\Burundi.png" />
+    <Resource Include="Resources\Nations\Cameroon.png" />
+    <Resource Include="Resources\Nations\Canada.png" />
+    <Resource Include="Resources\Nations\Cape Verde.png" />
+    <Resource Include="Resources\Nations\Central African Republic.png" />
+    <Resource Include="Resources\Nations\Chile.png" />
+    <Resource Include="Resources\Nations\Colombia.png" />
+    <Resource Include="Resources\Nations\Costa Rica.png" />
+    <Resource Include="Resources\Nations\Cote d%27Ivoire.png" />
+    <Resource Include="Resources\Nations\Croatia.png" />
+    <Resource Include="Resources\Nations\Denmark.png" />
+    <Resource Include="Resources\Nations\Ecuador.png" />
+    <Resource Include="Resources\Nations\England.png" />
+    <Resource Include="Resources\Nations\France.png" />
+    <Resource Include="Resources\Nations\Germany.png" />
+    <Resource Include="Resources\Nations\Italy.png" />
+    <Resource Include="Resources\Nations\Netherlands.png" />
+    <Resource Include="Resources\Nations\Portugal.png" />
+    <Resource Include="Resources\Nations\Spain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\add_player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\player_card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\authorization_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon_main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Nations\Norway.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Nations\Switzerland.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Nations\Uruguay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\player_11.png" />
+    <Resource Include="Resources\player_1324.png" />
+    <Resource Include="Resources\player_1337.png" />
+    <Resource Include="Resources\player_1556.png" />
+    <Resource Include="Resources\player_164.png" />
+    <Resource Include="Resources\player_3177.png" />
+    <Resource Include="Resources\player_349.png" />
+    <Resource Include="Resources\player_4147.png" />
+    <Resource Include="Resources\player_43.png" />
+    <Resource Include="Resources\player_45.png" />
+    <Resource Include="Resources\player_46.png" />
+    <Resource Include="Resources\player_47.png" />
+    <Resource Include="Resources\player_49.png" />
+    <Resource Include="Resources\player_68.png" />
+    <Resource Include="Resources\player_96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Nations\Dominican Republic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\player_102343.png" />
+    <Resource Include="Resources\player_146114.png" />
+    <Resource Include="Resources\player_3641.png" />
+    <Resource Include="Resources\player_3653.png" />
+    <Resource Include="Resources\player_50.png" />
+    <Resource Include="Resources\player_8458.png" />
+    <Resource Include="Resources\player_8474.png" />
+    <Resource Include="Resources\player_8514.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\player_7888.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
+</Project>

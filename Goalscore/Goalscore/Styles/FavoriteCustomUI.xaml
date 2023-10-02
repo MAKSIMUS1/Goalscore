@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:fui="clr-namespace:Goalscore.CustomUI">
+    <Style x:Key="Star" TargetType="{x:Type fui:AddToFavoritesUI}">
+        <Setter Property="Color" Value="Transparent"/>
+        <Setter Property="BorderColor" Value="#c8c8c8"/>
+        <Setter Property="SelectedColor" Value="Transparent"/>
+    </Style>
+</ResourceDictionary>
+    

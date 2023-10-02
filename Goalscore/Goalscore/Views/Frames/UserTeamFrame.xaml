@@ -1,0 +1,201 @@
+﻿<Page x:Class="Goalscore.Views.Frames.UserTeamFrame"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore.Views.Frames" xmlns:customui="clr-namespace:Goalscore.CustomUI" xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+      mc:Ignorable="d" 
+      d:DesignHeight="680" d:DesignWidth="1000"
+      Title="UserTeamFrame">
+
+    <Border CornerRadius="0 8 8 0" Background="{DynamicResource SecundaryBackgroundColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="800"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <!--DataGrid section-->
+            <DataGrid RowStyle="{DynamicResource DataGridRowStyle1}" 
+                      ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle1}" 
+                      CellStyle="{DynamicResource DataGridCellStyle1}" 
+                      x:Name="PlayersDataGrid" 
+                      Style="{DynamicResource DataGridStyle1}"
+                      Grid.Column="0"
+                      Margin="5"
+                      HorizontalScrollBarVisibility="Disabled">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn x:Name="DescriptionColumn" IsReadOnly="True" MinWidth="230" Width="3*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" >
+                                    <Image Margin="0 0 4 0" Width="18" Height="12" Source="{Binding NationalityImage}"/>
+                                    <TextBlock TextWrapping="Wrap" Foreground="{DynamicResource PrimaryTextColor}" Text="{Binding Name}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <Canvas Grid.Column="1" Height="680"
+                    Width="800">
+
+                <Canvas.Background>
+                    <ImageBrush ImageSource="../../Resources/team_field.png"></ImageBrush>
+                </Canvas.Background>
+                <Border Canvas.Top="550" Canvas.Left="353" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="GK" Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetGK}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+
+                <Border Canvas.Left="90" Canvas.Top="400" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="LB"  Height="72" Width="55" />
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetLB}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+                <Border  Canvas.Left="260" Canvas.Top="410" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="CB1" Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetCB1}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+                <Border Canvas.Right="260" Canvas.Top="410" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="CB2" Height="72" Width="55" />
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetCB2}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+                <Border Canvas.Right="90" Canvas.Top="400" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="RB"  Height="72" Width="55" >
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseDown">
+                                <i:InvokeCommandAction Command="{Binding SetRB}"/>
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </customui:PlayerLineup>
+                </Border>
+                <Border Canvas.Left="190" Canvas.Top="260" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="LCM"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetLCM}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+                <Border Canvas.Left="353" Canvas.Top="275" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="CM"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetCM}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+                <Border Canvas.Right="190" Canvas.Top="260" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="RCM"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetRCM}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+
+                <Border Canvas.Left="190" Canvas.Top="120" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="LW"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetLW}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+
+                <Border Canvas.Left="353" Canvas.Top="110" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="ST"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetST}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+
+                <Border Canvas.Right="190" Canvas.Top="120" Width="100" Height="130">
+                    <Border.Background>
+                        <ImageBrush ImageSource="../../Resources/player_card.png"></ImageBrush>
+                    </Border.Background>
+                    <customui:PlayerLineup x:Name="RW"  Height="72" Width="55"/>
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="MouseDown">
+                            <i:InvokeCommandAction
+                            Command="{Binding SetRW}"
+                             />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Border>
+            </Canvas>
+            <StackPanel Grid.Column="2">
+                <TextBlock x:Name="TeamPowerTextBlock" Foreground="{DynamicResource PrimaryTextColor}" Text="Choose all players">
+                    
+                </TextBlock>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Page>

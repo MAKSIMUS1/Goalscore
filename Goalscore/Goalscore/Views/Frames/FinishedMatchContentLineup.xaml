@@ -1,0 +1,107 @@
+﻿<Page x:Class="Goalscore.Views.Frames.FinishedMatchContentLineup"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Goalscore.Views.Frames" 
+      xmlns:customui="clr-namespace:Goalscore.CustomUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="515" d:DesignWidth="600"
+      Title="FinishedMatchContentLineup">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../../Resources/football_field.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="5"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!-- Hometeam -->
+        <StackPanel Grid.Column="0" VerticalAlignment="Center" >
+            <customui:PlayerLineup x:Name="HomeGK"/>
+        </StackPanel>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="HomeLB" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="HomeCB1" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="HomeCB2" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="3" x:Name="HomeRB" />
+        </Grid>
+
+        <Grid Grid.Column="4">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="HomeLCM" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="HomeCM" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="HomeRCM" />
+        </Grid>
+
+        <Grid Grid.Column="6" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="HomeLW" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="HomeST" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="HomeRW" />
+        </Grid>
+        <!-- Away team -->
+        <Grid Grid.Column="8" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="AwayRW" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="AwayST" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="AwayLW" />
+        </Grid>
+        <Grid Grid.Column="10" >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="AwayRCM" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="AwayCM" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="AwayLCM" />
+        </Grid>
+        <Grid Grid.Column="12">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="0" x:Name="AwayRB" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="1" x:Name="AwayCB2" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="2" x:Name="AwayCB1" />
+            <customui:PlayerLineup VerticalAlignment="Center" Grid.Row="3" x:Name="AwayLB" />
+        </Grid>
+        <StackPanel Grid.Column="14" VerticalAlignment="Center" >
+            <customui:PlayerLineup x:Name="AwayGK" />
+        </StackPanel>
+    </Grid>
+</Page>
